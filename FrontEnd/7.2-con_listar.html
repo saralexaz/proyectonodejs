@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="7.2-con_listar.css">
+    <title>Listar</title>
+</head>
+<body>
+    <div class="contenedor-tarjeta">
+        <!-- Cabecera de la tarjeta -->
+        <div class="cabecera-logo">
+            <img src="Imagenes/logo.png.png" alt="" class="logo-imagen">
+        </div>
+        
+        <!-- Contenido principal -->
+        <div class="contenido-principal">
+            <div class="titulo-contacto">Datos Contacto</div>
+            
+            <!-- Contenedor de la tabla -->
+            <div class="contenedor-tabla">
+                <table class="tabla-centrada">
+                    <thead>
+                        <tr>
+                            <th>Código</th>
+                            <th>Descripción</th>
+                            <th>Fecha del Contacto</th>
+                            <th>Estatus</th>
+                            <th>Acción</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cuerpo-tabla">
+                        
+                        <!--<tr>
+                            <td>1</td>
+                            <td>Rol1</td>
+                            <td>Rol1</td>
+                            <td>A</td>
+                            <td class="acciones-tabla">
+                                <a href="7.3-con_editar.html" class="boton-accion-tabla" title="Editar">✎</a>
+                                <a href="#" class="boton-accion-tabla" title="Eliminar">🗑️</a>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>2</td>
+                            <td>Rol2</td>
+                            <td>Rol2</td>
+                            <td>A</td>
+                            <td class="acciones-tabla">
+                                <a href="7.3-con_editar.html" class="boton-accion-tabla" title="Editar">✎</a>
+                                <a href="#" class="boton-accion-tabla" title="Eliminar">🗑️</a>
+                        </tr>
+                        
+                         <tr>
+                            <td>3</td>
+                            <td>Rol3</td>
+                            <td>Rol3</td>
+                            <td>A</td>
+                            <td class="acciones-tabla">
+                                <a href="7.3-con_editar.html" class="boton-accion-tabla" title="Editar">✎</a>
+                                <a href="#" class="boton-accion-tabla" title="Eliminar">🗑️</a>
+                        </tr>
+                        
+                         <tr>
+                            <td>4</td>
+                            <td>Rol4</td>
+                            <td>Rol4</td>
+                            <td>A</td>
+                            <td class="acciones-tabla">
+                                <a href="7.3-con_editar.html" class="boton-accion-tabla" title="Editar">✎</a>
+                                <a href="#" class="boton-accion-tabla" title="Eliminar">🗑️</a>
+                        </tr>
+                        
+                        <tr>
+                            <td>5</td>
+                            <td>Rol5</td>
+                            <td>Rol5</td>
+                            <td>A</td>
+                            <td class="acciones-tabla">
+                                <a href="7.3-con_editar.html" class="boton-accion-tabla" title="Editar">✎</a>
+                                <a href="#" class="boton-accion-tabla" title="Eliminar">🗑️</a>
+                        </tr>-->
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Contenedor de los botones de acción -->
+            <div class="rejilla-botones">
+                <button class="boton-accion" onclick="window.location.href='7.1-con_agregar.html'">Agregar</button>
+                <button class="boton-accion" onclick="window.location.href='7-contacto.html'">Contacto Rol</button>
+                <button class="boton-accion" onclick="window.location.href='2-roles.html'">Menú Principal</button>
+            </div>
+        </div>
+    </div>
+    <script src="../BackEnd/contacto.js"></script>
+</body>
+</html>
