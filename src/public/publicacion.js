@@ -1,4 +1,4 @@
-const apiUrl='http://localhost:3000/publicacion';
+const apiUrl='http://localhost:3000/api/publicacion';
 
 //para la pagina listar
 function cargarContacto(){

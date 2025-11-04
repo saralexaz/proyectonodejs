@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="5.1-pub_agregar.css" />
+    <link rel="stylesheet" href="JS/bootstrap.min.css" />
+    <title>Roles</title>
+  </head>
+  <body class="bg-gray-100 flex items-center justify-center min-h-screen p-4">
+    <div class="tarjeta-contenedor">
+      <!-- Cabecera de la tarjeta -->
+      <div class="cabecera-logo">
+        <img src="Imagenes/logo.png.png" alt="" class="logo-imagen" />
+        <!-- Sección de la cabecera con el logo y el texto -->
+        <h1 class="text-lg font-bold">Registro de Publicación</h1>
+      </div>
+
+      <!-- Contenido principal -->
+      <div class="contenido-principal">
+        <h2 class="titulo-seccion">Agregar Nueva Publicación</h2>
+
+        <!-- Formulario de agregar datos -->
+        <form
+          class="formulario"
+          id="formulario"
+          action="5-publicacion.html"
+          method="post"
+        >
+          <div class="rejilla-formulario">
+            <input type="hidden" id="id" name="id" />
+
+            <!-- Campo de Código 
+                    <div class="campo">
+                        <label for="cod_pub" class="etiqueta">Código</label>
+                        <input type="text" id="cod_pub" name="cod_pub" class="entrada" placeholder="Ingrese código">
+                        <span></span>
+                    </div>-->
+            <!-- Campo de fecha de publicación -->
+            <div class="campo">
+              <label for="fec_pub" class="etiqueta">Fecha Publicación</label>
+              <input
+                type="date"
+                id="fec_pub"
+                name="fec_pub"
+                class="entrada"
+                required
+              />
+              <span></span>
+            </div>
+            <!-- Campo de titulo de publicación -->
+            <div class="campo">
+              <label for="tit_pub" class="etiqueta">Titulo Publicación</label>
+              <input
+                type="text"
+                id="tit_pub"
+                name="tit_pub"
+                class="entrada"
+                placeholder="Ingrese titulo de publicación"
+              />
+              <span></span>
+            </div>
+            <!-- Campo de descripción -->
+            <div class="campo">
+              <label for="des_pub" class="etiqueta">Descripción</label>
+              <textarea
+                id="des_pub"
+                name="des_pub"
+                rows="5"
+                cols="50"
+                class="entrada"
+                placeholder="Escribe aquí tu descripción..."
+              ></textarea>
+              <span></span>
+            </div>
+            <!-- Campo de Estatus -->
+            <div class="campo">
+              <label for="est_pub" class="etiqueta">Estatus</label>
+              <select id="est_pub" name="est_pub" class="entrada">
+                <option value="">Seleccione...</option>
+                <option value="A">Activo</option>
+                <option value="I">Inactivo</option>
+              </select>
+              <span></span>
+            </div>
+          </div>
+          <div class="contenedor-botones">
+            <button type="submit" class="boton-accion">Guardar Registro</button>
+            <a
+              href="5-publicacion.html"
+              class="boton-secundario"
+              style="
+                display: inline-block;
+                text-align: center;
+                text-decoration: none;
+                padding: 0.5rem 1rem;
+              "
+              >Volver</a
+            >
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="Javascript/jsVidermid/pub_agregar.js"></script>
+    <script src="./publicacion.js"></script>
+  </body>
+</html>
